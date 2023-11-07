@@ -72,9 +72,34 @@
 .rectangle1 {
     flex-shrink: 0;
     border-radius: 46px;
-    background: #0C0B0B;
+    background: black;
     margin-bottom: 16px;
     padding-left: 3px;
+}
+
+.rectangle1:hover {
+    background: orange;
+}
+
+.rectangle1:hover .circle1 {
+    background: yellow;
+
+}
+
+.rectangle1:hover .number {
+    color: orange;
+}
+
+.rectangle2:hover {
+    background: orange;
+}
+
+.rectangle2:hover .circle2 {
+    background: yellow;
+}
+
+.rectangle2:hover .number1 {
+    color: orange;
 }
 
 .p1 {
@@ -96,14 +121,13 @@
     background: #151313;
     gap: 23px;
     margin-bottom: 16px;
-
 }
 
 .circle1 {
     width: 61px;
     border-radius: 50%;
     height: 61px;
-    background: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
+    background: white;
     margin-top: 5px;
     margin-left: 5px;
 }
@@ -113,7 +137,7 @@
     font-size: 22px;
     font-weight: 600;
     text-align: center;
-    color: rgba(255, 255, 255, 1);
+    color: black;
     padding-top: 15px;
 }
 
@@ -134,24 +158,6 @@
     margin-left: 5px;
 }
 
-.circle2:hover {
-    background: orange;
-}
-
-.number1:hover {
-    color: #FFF;
-}
-
-.circle1:hover {
-    background: white;
-
-    /* transition: 400ms all linear; */
-}
-
-.number:hover {
-    color: orange;
-}
-
 .number1 {
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
@@ -161,10 +167,17 @@
     padding-top: 15px;
 }
 
+.position-relative {
+    position: relative;
+}
+
 .overflow {
+    content: "";
     width: 50%;
     position: absolute;
     right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 
 }
 
